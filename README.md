@@ -30,13 +30,30 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 1. Explain how to build stateful class components.
 
+**Create a class extended from react component then add a constructor and super. After that just add a state property.**
+
 2. Describe the different phases of the component lifecycle.
+
+**Mounting, updating, and unmounting**
 
 3. Demonstrate an understanding of class component lifecycle methods.
 
+**Life cycle methods are events that happen during the lifespan of a component. They are almost like javascript event listeners but they dont always need user input to be triggered**
+
+**componentDidMount() is called when a component and all its subcomponents render properly**
+**componentDidUpdate is called when a component state or props change, it also lets you access to previous props/state**
+**componentWillUnmount is called as a "last call" if you will before unmounting**
+
 4. Define stateful logic.
 
+**Stateful logic is any code that uses state**
+
 5. Describe how to test a React component with React Testing Library.
+
+**Create a test.js file for the component you would like to test and import the component you would like to test and import/deconstruct the things you need from "@testing-library/react".**
+
+**After that create your test functions.**
+**Render component - query elements - expect results - fire events ect** 
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 
@@ -118,7 +135,7 @@ In your solution, it is essential that you follow best practices and produce cle
 After finishing your required elements, you can push your work further. These goals may or may not be things you have learned in this module but they build on the material you just studied. Time allowing, stretch your limits and see if you can deliver on the following optional goals:
 
 - [ ] Add a filter input to the plant list page.
-- [ ] Build and implement another custom hook - a dark mode hook would be great for this project, though you'll have to style the light theme ☀️ 🌙
+- [x] Build and implement another custom hook - a dark mode hook would be great for this project, though you'll have to style the light theme ☀️ 🌙
 - [ ] Add a test file for the `ShoppingCart` component and test that it displays plants there (you'll need some mock plant data for the test, and then you can pass that data in as a prop when you call `render` and render the component - see the example below)
 
 ```js
